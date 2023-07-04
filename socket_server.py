@@ -13,9 +13,10 @@ while True:
     print(f"Connection received from {address}")
     while True: #for individual client request 
         data = connection.recv(1024)   #bytes to receive over network
-        if(data=='end'):
+        if(data.decode()=='end'):
             break
         print("Client sent :",data.decode())   #UTF8 data is converted to string using .decode()
         server_data=input("Enter data to send:")
         connection.send(server_data.encode())
     connection.close()  
+    print("Client Disconnected")
