@@ -1,3 +1,1 @@
-# Client-Server-Chat-System 
-Python app for Client Server Chat System using socket.
-Tested Scenario for the communication among the processes in the same computer .
+A Python application for a Client-Server Chat System using socket programming. The application has been tested to ensure seamless communication between processes running on the same computer. This robust implementation facilitates real-time messaging and enables efficient exchange of information within a local network environment.
